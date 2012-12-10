@@ -1,0 +1,9 @@
+mysql> SELECT COUNT(*) AS Number_of_records FROM Weblog;
++-------------------+
+| Number_of_records |
++-------------------+
+|             15231 |
++-------------------+
+1 row in set (0.01 sec)
+
+mysql> 

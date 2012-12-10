@@ -1,0 +1,21 @@
+mysql> SELECT COUNT(knr) AS antal_kurser, snavn, Student.snr
+    -> FROM Student LEFT JOIN Tilmelding
+    -> ON Student.snr = Tilmelding.snr
+    -> GROUP BY snavn, Student.snr
+    -> ORDER BY snavn;
++--------------+------------------+-------+
+| antal_kurser | snavn            | snr   |
++--------------+------------------+-------+
+|            2 | Andreas Jensen   | L1432 |
+|            3 | Anne Larsen      | J9765 |
+|            3 | Eva Jørgensen    | B7559 |
+|            0 | Kim Johansen     | P3245 |
+|            4 | Marie Madsen     | L1344 |
+|            3 | Martin Andersen  | B8566 |
+|            3 | Ole Olesen       | L1234 |
+|            3 | Rasmus Hansen    | B7332 |
+|            2 | Rikke Richardsen | L2345 |
+|            3 | Søren Sørensen   | J0007 |
+|            4 | Ulrikka Funder   | B7117 |
++--------------+------------------+-------+
+11 rows in set (0.00 sec)

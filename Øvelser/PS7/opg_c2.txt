@@ -1,0 +1,8 @@
+SELECT webside, COUNT(webside) 
+FROM Weblog 
+GROUP BY webside;
+
+SELECT webside, COUNT(webside) AS antal
+FROM Weblog
+GROUP BY webside
+ORDER BY antal DESC;

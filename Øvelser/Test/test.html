@@ -1,0 +1,106 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+
+  <html>
+
+    <head><meta http-equiv="Content-Type"
+    content="text/html; charset=ISO-8859-1">
+    <title>Opgave B: Tilfredshedsundersøgelse - AJAX Farmaceuticals</title>
+    </head> 
+    <style type="text/css">
+    body {
+      background-color: teal;
+    }
+    h1 {
+      font-family: verdana, arial;
+    }
+    p {
+      margin-left: 2em;
+      font-family: verdana, arial, sans-serif;
+      font-size: 80%;
+    }
+    #top {
+      margin: 0px;
+      padding: 10px;
+      background: white;
+      height: 100px;
+      border: 3px outset black;
+    }
+    #left {
+      position: absolute;
+      background: #87CEEB;
+      left: 10px;
+      top: 10px;
+      width: 200 px;
+    }
+    #center {
+      margin-left: 220px;
+      margin right: 220px;
+      background: green;
+    }
+    #right {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 200 px;
+    }
+    </style>
+
+    <body>
+      <div id="top">
+        <h1>Tilfredshedsundersøgelse for AJAX Farmaceuticals</h1>
+      </div>  
+    
+      <div id="left">
+      <p><span style="color=blue; font-size: 2.5em; float: left; padding-right: 
+      2px;">V</span>elkommen til AJAX Farmaceuticals store tilfredshedsundersøgelse!
+      På AJAX Farmaceuticals er vi meget interesserede i at høre om dine erfaringer 
+      med vores nye produkt - ACME Hostesaft. Vi trækker lod om 3 flasker vin blandt 
+      alle de indsendte besvarelser.</p>
+      </div>
+
+      <div id="center">
+      <form method='post' action='receivingScript.php'>
+
+        <textarea name='message' rows='5' cols='40'>
+        Skriv din uforbeholdne mening om produktet her...
+        </textarea>
+
+        <p>Vi vil også gerne vide, om du har oplevet gener eller bivirkninger i 
+        forbindelse med brug af produktet. Kryds af, hvis du har oplevet en eller 
+        flere af følgende gener eller bivirkninger:</p> 
+
+        <p>Halsbrand <input type="checkbox" name="halsbrand" value="halsbrand"></p>
+        <p>Svimmelhed <input type="checkbox" name="svimmelhed" value="svimmelhed"></p>
+        <p>Kvalme <input type="checkbox" name="kvalme" value="kvalme"></p>
+        <p>Næseblod <input type="checkbox" name="næseblod" value="næseblod"></p>
+        <p>Udslæt<input type="checkbox" name="udslæt" value="udslæt"></p>
+      </form>
+      </div>
+
+      <div id="right">
+      <form method="post" action:"receivingScript.php">
+         <p>Vi vil også meget gerne høre om din overordnede tilfredshed med
+         produktet. Kryds af ved en af de følgende svarmuligheder:</p><br>
+          
+         <p>Meget tilfreds<input type="radio" name="very happy" value="meget tilfreds"></p><br>
+         <p>Tilfreds<input type="radio" name="happy" value="tilfreds"></p><br>
+         <p>Hverken eller<input type="radio" name="so so" value="hverken eller"></p><br>
+         <p>Utilfreds<input type="radio" name="unhappy" value="utilfreds"></p><br>
+         <p>Meget utilfreds<input type="radio" name="very unhappy" value="meget utilfreds"></p><br>
+
+        <p>Mange tak for hjælpen!</p>
+        
+        <p>Hvis du ønsker at deltage i lodtrækningen, så skriv din mail-adresse i 
+        nedenstående felt.</p>
+
+        <input type="text" name="mailadresse" size="30" maxsize="30" value="mail">
+        <input type='submit' value='Send'>
+
+      </form>
+      </div>
+
+    </body> 
+
+  </html> 
+

@@ -1,0 +1,38 @@
+[saba@hulk ~]$ cd DSDS
+-bash: cd: DSDS: No such file or directory
+[saba@hulk ~]$ l
+-bash: l: command not found
+[saba@hulk ~]$ cd /import/stud/www
+[saba@hulk www]$ ls
+alumne            id                 main            projekter_e2006
+blogs             index.html         mirrors         projekter_e2007
+dkm-workshop      index.url          myadmin         projekter_f2007
+e2007             itupedia           projects_e2003  projekter_f2008
+ebuss             konceptE06         projects_e2004  speciale
+f2007             kursusadm          projects_e2005  stud
+f2008             kursusbog          projects_e2006  tempdir
+fest              kursusvalg_dev     projects_f2003  visualStudioNET2003msdn
+gamelab           kursusvalg_lukket  projects_f2004  _W_drive
+gamelab_thesims2  lost+found         projects_f2005  websites
+gwd               luvitvideo         projects_f2006
+[saba@hulk www]$ cd f2008
+[saba@hulk f2008]$ cd dsds
+-bash: cd: dsds: No such file or directory
+[saba@hulk f2008]$ cd DSDS
+[saba@hulk DSDS]$ cd saba 
+[saba@hulk saba]$ ls
+PS1  PS2  PS3  PS4  PS5  PS6  PS7  webscraping.php
+[saba@hulk saba]$ cd PS7
+[saba@hulk PS7]$ mysql -hmysql.itu.dk -u saba -p dsds_susie;
+Enter password: 
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 1665285 to server version: 4.1.21-max
+
+Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
+
+mysql> LOAD DATA LOCAL infile 'wwwstats.txt' into TABLE Weblog;
+Query OK, 15231 rows affected, 9 warnings (0.15 sec)
+Records: 15231  Deleted: 0  Skipped: 0  Warnings: 9

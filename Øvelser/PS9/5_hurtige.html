@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title>5 hurtige</title>
+  </head>
+  <body>
+  <h1>5 hurtige</h1>
+  <p>1. Når man ønsker at bruge header() skal man sikre sig at "intet output <br>
+  overhovedet er blevet sendt til browseren" - ellers sender PHP automatisk header <br>
+  oplysninger på baggrund af dette output.</p>
+  <p>2. Jeg går ud fra, det er fordi bruger kan manipulere formvariablerne ved at <br>
+  ændre i URL'en, da formvariablerne bliver videresendt via denne.</p>
+  <p>3. Man kan lave en fil med regulære udtryk for alle relevante former for input <br>
+  fra brugeren (jf. "formvar" eksemplet fra forelæsningen), som man includer i hvert <br>
+  script.</p>
+  <p>4. $_REQUEST[q], $_REQUEST[ie], $_REQUEST[oe], $_REQUEST[aq], $_REQUEST[rls], <br>
+  $_REQUEST[client].</p>
+  <p>5. Den første kodestump er del af en while-løkke, hvorfor "indholdet af løkken" - <br>
+  udskrivningen af pladser i arrayet - bliver gentaget indtil værdien af udtrykket <br> 
+  $row = mysql_fetch_array($result) er falsk, dvs. der ikke er flere arrays - rækker - <br>
+  i den givne tabel. I den anden kodestump bliver kun værdier i det første array, som <br> 
+  kommandoen "mysql_fetch_array" henter ind, skrevet ud. 
+  </body>
+</html>

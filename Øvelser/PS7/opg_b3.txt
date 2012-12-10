@@ -1,0 +1,40 @@
+mysql> SELECT snavn, knavn, laerer, Tilmelding.snr                                                                                           
+    -> FROM Student, Kursus, Tilmelding
+    -> WHERE Student.snr = Tilmelding.snr
+    -> AND Kursus.knr = Tilmelding.knr
+    -> ORDER BY snavn;  
++------------------+--------------------------------------------+------------------+-------+
+| snavn            | knavn                                      | laerer           | snr   |
++------------------+--------------------------------------------+------------------+-------+
+| Andreas Jensen   | KOnceptudvikling på multimedieproduktioner | Elise Nørrekjær  | L1432 |
+| Andreas Jensen   | Interaktionsdesign                         | Peter Busk Stehr | L1432 |
+| Anne Larsen      | KOnceptudvikling på multimedieproduktioner | Elise Nørrekjær  | J9765 |
+| Anne Larsen      | Grundlæggende Programmering                | Morten Rhiger    | J9765 |
+| Anne Larsen      | Databasestøttet Webpublicering             | Martin Elsman    | J9765 |
+| Eva Jørgensen    | Interaktionsdesign                         | Peter Busk Stehr | B7559 |
+| Eva Jørgensen    | Grundlæggende Programmering                | Morten Rhiger    | B7559 |
+| Eva Jørgensen    | Databasestøttet Webpublicering             | Martin Elsman    | B7559 |
+| Marie Madsen     | Interaktionsdesign                         | Peter Busk Stehr | L1344 |
+| Marie Madsen     | Grundlæggende Programmering                | Morten Rhiger    | L1344 |
+| Marie Madsen     | Scripting, databaser og systemarkitektur   | Jonas Holbech    | L1344 |
+| Marie Madsen     | Databasestøttet Webpublicering             | Martin Elsman    | L1344 |
+| Martin Andersen  | Interaktionsdesign                         | Peter Busk Stehr | B8566 |
+| Martin Andersen  | Grundlæggende Programmering                | Morten Rhiger    | B8566 |
+| Martin Andersen  | Scripting, databaser og systemarkitektur   | Jonas Holbech    | B8566 |
+| Ole Olesen       | KOnceptudvikling på multimedieproduktioner | Elise Nørrekjær  | L1234 |
+| Ole Olesen       | Scripting, databaser og systemarkitektur   | Jonas Holbech    | L1234 |
+| Ole Olesen       | Databasestøttet Webpublicering             | Martin Elsman    | L1234 |
+| Rasmus Hansen    | Grundlæggende Programmering                | Morten Rhiger    | B7332 |
+| Rasmus Hansen    | Databasestøttet Webpublicering             | Martin Elsman    | B7332 |
+| Rasmus Hansen    | KOnceptudvikling på multimedieproduktioner | Elise Nørrekjær  | B7332 |
+| Rikke Richardsen | Grundlæggende Programmering                | Morten Rhiger    | L2345 |
+| Rikke Richardsen | Databasestøttet Webpublicering             | Martin Elsman    | L2345 |
+| Søren Sørensen   | Interaktionsdesign                         | Peter Busk Stehr | J0007 |
+| Søren Sørensen   | Grundlæggende Programmering                | Morten Rhiger    | J0007 |
+| Søren Sørensen   | Databasestøttet Webpublicering             | Martin Elsman    | J0007 |
+| Ulrikka Funder   | KOnceptudvikling på multimedieproduktioner | Elise Nørrekjær  | B7117 |
+| Ulrikka Funder   | Interaktionsdesign                         | Peter Busk Stehr | B7117 |
+| Ulrikka Funder   | Scripting, databaser og systemarkitektur   | Jonas Holbech    | B7117 |
+| Ulrikka Funder   | Databasestøttet Webpublicering             | Martin Elsman    | B7117 |
++------------------+--------------------------------------------+------------------+-------+
+30 rows in set (0.01 sec)

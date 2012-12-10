@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title>Problem 3 - Regular expressions</title>
+  </head>
+  <body>
+  <h1>Problem 3 - Regular expressions</h1>
+  <br>
+  <h2>Problem 3.1</h2>
+  <p>$pattern_digit='^([0])$|^([1-9][0-9]*)$' eller (^[1-9]+[0-9]*$)|(^[0]{1}$) </p>
+  <br>
+  <h2>Problem 3.2</h2>
+  <p>$pattern_year='^[0-2][0-9][0-9][0-9]-[0-1][0-9]-[0-3][0-9]$'</p>
+  <br>
+  <h2>Problem 3.3</h2>
+  <p>include("../formvars.php");
+  function vp_check_date($string) {<br>
+    if (ereg($pattern_year, $string) == 0) {<br>
+      error("Der er en fejl i det årstal, du har indtastet")<br>
+      exit();<br>
+    }
+    return;
+  }
+  <br>
+  }</p>  
+  </body>
+</html>

@@ -1,0 +1,13 @@
+mysql> SELECT knavn, COUNT(snr) FROM Kursus, Tilmelding
+    -> WHERE Kursus.knr = Tilmelding.knr
+    -> GROUP BY knavn;
++--------------------------------------------+------------+
+| knavn                                      | COUNT(snr) |
++--------------------------------------------+------------+
+| Databasestøttet Webpublicering             |          8 |
+| Grundlæggende Programmering                |          7 |
+| Interaktionsdesign                         |          6 |
+| KOnceptudvikling på multimedieproduktioner |          5 |
+| Scripting, databaser og systemarkitektur   |          4 |
++--------------------------------------------+------------+
+5 rows in set (0.02 sec)

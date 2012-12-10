@@ -1,0 +1,21 @@
+mysql> SELECT itu_kurser.kursus_id, itu_kurser.kursusnavn,
+    -> itu_personer.navn AS ansvarlig
+    -> FROM itu_kurser, itu_personer, itu_kursusansvar
+    -> WHERE (itu_kurser.kursus_id = itu_kursusansvar.kursus_id
+    -> AND itu_personer.person_id = itu_kursusansvar.person_id
+    -> AND semester = 'F2008');
++-----------+-----------------------------------------------------------+--------------------------------+
+| kursus_id | kursusnavn                                                | ansvarlig                      |
++-----------+-----------------------------------------------------------+--------------------------------+
+| DMPI      | Multimedieproduktion på internet                          | Christoffer Andreas Viggo Soya |
+| IWJX      | Interactive Web Services with Java and XML                | Jacob Michael Avlund           |
+| IWJX      | Interactive Web Services with Java and XML                | Martynas Jusevicius            |
+| DSDI      | Social Software: Design and Implementation                | Jens Kaaber Pors               |
+| DSDI      | Social Software: Design and Implementation                | Lotte Lund Larsen              |
+| DIND      | Interaktionsdesign                                        | Tomas Sokoler                  |
+| DIND      | Interaktionsdesign                                        | Peter Busk Stehr               |
+| KMP       | Konceptudvikling af multimedieproduktioner                | Elise Nørrekjær                |
+| DSDS      | Introduktion til scripting, databaser og systemarkitektur | Jonas Holbech                  |
++-----------+-----------------------------------------------------------+--------------------------------+
+9 rows in set (0.04 sec)
+

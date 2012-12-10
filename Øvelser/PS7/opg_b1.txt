@@ -1,0 +1,13 @@
+mysql> SELECT knavn, laerer FROM Kursus
+    -> ORDER BY knavn;
++--------------------------------------------+------------------+
+| knavn                                      | laerer           |
++--------------------------------------------+------------------+
+| Databasestøttet Webpublicering             | Martin Elsman    |
+| Grundlæggende Programmering                | Morten Rhiger    |
+| Interaktionsdesign                         | Peter Busk Stehr |
+| KOnceptudvikling på multimedieproduktioner | Elise Nørrekjær  |
+| Multimedieproduktion på internettet        | Christoffer Soya |
+| Scripting, databaser og systemarkitektur   | Jonas Holbech    |
++--------------------------------------------+------------------+
+6 rows in set (0.00 sec)
